@@ -94,6 +94,7 @@ const questions = [
 
 const questionContainer = document.getElementById('question-container');
 const resultDiv = document.getElementById('result');
+const restartButton = document.getElementById('restart-btn'); // Botón de reinicio
 
 let shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 let currentQuestionIndex = 0;
@@ -155,7 +156,7 @@ function showResult() {
         const questionText = shuffledQuestions[index].question;
         const div = document.createElement('div');
         div.classList.add('answer');
-        div.innerHTML = `Pregunta ${index + 1}: ${questionText}<br>Tu respuesta: ${answer.selectedAnswer}. Respuesta correcta: ${answer.correctAnswer}.`;
+        div.innerHTML = `${index + 1}: ${questionText}<br/> Tu respuesta: ${answer.selectedAnswer}. <br/> Respuesta correcta: ${answer.correctAnswer}.`;
         if (answer.selectedAnswer === answer.correctAnswer) {
             div.classList.add('correct');
         } else {
@@ -166,6 +167,20 @@ function showResult() {
     // Limpiar los botones de respuesta después de mostrar los resultados
     const answerButtonsDiv = document.getElementById('answer-buttons');
     resetAnswerButtons(answerButtonsDiv);
+
+    restartButton.style.display = 'block'; // Mostrar el botón de reinicio
 }
+// Función para reiniciar el juego
+function restartGame() {
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = [];
+    resultDiv.innerHTML = ''; // Limpiar los resultados
+    restartButton.style.display = 'none'; // Ocultar el botón de reinicio
+    displayNextQuestion(); // Comenzar el juego nuevamente
+}
+
+restartButton.addEventListener('click', restartGame); // Agregar evento de clic al botón de reinicio
 
 displayNextQuestion();
