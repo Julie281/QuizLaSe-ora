@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Piedra Papel o Tijeras</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="score">
+      <p>Tú</p>
+      <p>Cyber</p>
+      <p id="score-player">0</p>
+      <p id="score-computer">0</p>
+      <div id="reset">Volver a jugar</div>
+    </div>
+    <div class="action">
+      <p id="message">A jugar</p>
+      <div id="next">Siguiente</div>
+    </div>
+    <div class="play">
+      <div class="eleccion">
+        <div class="button btn-player" id="piedra">
+          <img src="./assets/piedra.png" alt="piedra" />
+          <p>Piedra</p>
+        </div>
+        <div class="button btn-player" id="papel">
+          <img src="./assets/papel.png" alt="papel" />
+          <p>Papel</p>
+        </div>
+        <div class="button btn-player" id="tijeras">
+          <img src="./assets/tijeras.png" alt="tijeras" />
+          <p>Tijeras</p>
+        </div>
+      </div>
+
+      <div class="eleccion">
+        <div class="button btn-compu" id="opiedra">
+          <img src="./assets/piedra.png" alt="piedra" />
+          <p>Piedra</p>
+        </div>
+        <div class="button btn-compu" id="opapel">
+          <img src="./assets/papel.png" alt="papel" />
+          <p>Papel</p>
+        </div>
+        <div class="button btn-compu" id="otijeras">
+          <img src="./assets/tijeras.png" alt="tijeras" />
+          <p>Tijeras</p>
+        </div>
+      </div>
+    </div>
+    <footer><a href="../index.html">Menú principal</a></footer>
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>

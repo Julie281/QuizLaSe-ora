@@ -1,0 +1,49 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-image: url("pokemon_world_map_as_of_2023__kitakami__by_mossen1998_dgctk18.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e4e4e4f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    padding: none;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+ img{
+    text-align: center;
+    width: 50%;
+ }
+button{
+    display: block;
+    width: 96%; /* Esto establecerá el mismo ancho para todos los botones */
+    margin: 2%; /* Añade un pequeño margen inferior entre los botones */
+    padding: 15px; /* Añade relleno para hacer los botones más fáciles de hacer clic */
+    font-size: 14px; /* Tamaño de fuente para los botones */
+    border: none;
+    background-color: #85929E;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+#option{
+    margin: 10px;
+}

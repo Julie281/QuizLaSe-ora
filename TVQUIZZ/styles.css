@@ -1,0 +1,92 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-image: url("taylor-swift-header.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e4e4e4f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+/*#submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}*/
+
+#result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.answer {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.correct {
+    color: #27AE60;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #E74C3C;
+    font-weight: bold;
+}
+.answerButton {
+    display: block;
+    width: 100%; /* Esto establecerá el mismo ancho para todos los botones */
+    margin-bottom: 5px; /* Añade un pequeño margen inferior entre los botones */
+    padding: 10px; /* Añade relleno para hacer los botones más fáciles de hacer clic */
+    font-size: 14px; /* Tamaño de fuente para los botones */
+    border: none;
+    background-color: #85929E;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.answerButton:hover {
+    background-color: #34495E;
+}
+
+#restart-btn {
+    display: none; /* Ocultar el botón inicialmente */
+    width: 100%; /* Esto establecerá el mismo ancho para todos los botones */
+    margin-bottom: 5px; /* Añade un pequeño margen inferior entre los botones */
+    padding: 10px; /* Añade relleno para hacer los botones más fáciles de hacer clic */
+    font-size: 14px; /* Tamaño de fuente para los botones */
+    border: none;
+    background-color: #85929E;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
