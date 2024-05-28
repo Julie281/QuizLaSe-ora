@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+    <div id="game">
+        
+        <h1>MasterMind</h1>
+        <div id="board"></div>
+        <div id="selectors">
+            <h3>Selecciona tus colores: </h3>
+            <div id="colorChoices">
+                <button class="color-btn" style="background-color: red;" data-color="R"></button>
+                <button class="color-btn" style="background-color: green;" data-color="G"></button>
+                <button class="color-btn" style="background-color: blue;" data-color="B"></button>
+                <button class="color-btn" style="background-color: yellow;" data-color="Y"></button>
+                <button class="color-btn" style="background-color: orange;" data-color="O"></button>
+                <button class="color-btn" style="background-color: purple;" data-color="P"></button>
+            </div>
+            <div id="currentGuess"></div>
+            <button id="submitGuess" onclick="makeGuess()">Enviar Respuesta</button>
+        </div>
+        <div id="message"></div>
+        <a href="../index.html">Menú principal</a>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
